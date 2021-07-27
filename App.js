@@ -5,6 +5,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import Home from './screens/Home';
 import Login from './screens/Login';
+import Transactions from './screens/Transactions';
 import {
   useFonts,
   Poppins_500Medium,
@@ -29,12 +30,19 @@ const HomeScreen = ({ navigation }) => (
   </Screen>
 );
 
+const TransScreen = ({ navigation }) => (
+  <Screen>
+    <Transactions navigation={navigation} />
+  </Screen>
+);
+
 export default function App() {
   return (
       <NavigationContainer>
         <Stack.Navigator>
           <Stack.Screen name="Login" component={LoginScreen} />
           <Stack.Screen name="Details" component={HomeScreen} />
+          <Stack.Screen name="History" component={TransScreen} />
         </Stack.Navigator>
       </NavigationContainer>
     
