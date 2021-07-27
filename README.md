@@ -1,6 +1,8 @@
 # Finance App
 
 UI Design based on [here](https://dribbble.com/shots/14210557-Finance-Mobile-Application-UX-UI-Design).
+https://github.com/edalimed/FinanceApp/blob/main/pics/screen%201.jpeg
+
 
 
 
